@@ -1,0 +1,162 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 18px;
+}
+
+body {
+  position: relative;
+  padding: 148px 24px 0px 24px;
+  background-color: #19a2ae;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.bg-top {
+  position: absolute;
+  top: -500px;
+  left: -300px;
+}
+
+.bg-bottom {
+  position: absolute;
+  bottom: -600px;
+  right: -200px;
+}
+
+.card {
+  position: relative;
+  width: 326px;
+  height: 374px;
+  margin: 0 auto;
+  border-radius: 15px;
+  background-color: #fff;
+}
+
+.card .card-bg {
+  border-radius: 15px 15px 0 0;
+  width: 326px;
+  position: absolute;
+  overflow: hidden;
+}
+
+.card .card-avatar {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 5px solid #ffffff;
+}
+
+.card .card-personal {
+  position: absolute;
+  top: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.card .card-personal .name-container {
+  margin-bottom: 8px;
+}
+
+.card .card-personal .name {
+  font-weight: bold;
+  margin-right: 8px;
+  color: #2e3349;
+}
+
+.card .card-personal .age,
+.card .card-personal .location {
+  color: #6b7082;
+}
+
+.card .card-personal .location {
+  font-size: 14px;
+}
+
+.card .card-bottom {
+  width: 100%;
+  border-top: 1px solid #979797;
+  position: absolute;
+  top: 285px;
+  height: 88px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.card .card-bottom .number {
+  color: #2e3349;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.card .card-bottom .label {
+  font-size: 10px;
+  color: #6b7082;
+}
+
+.card .card-bottom .likes {
+  margin: 0 38px;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 24px;
+  left: 0px;
+  right: 0px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media all and (min-width: 1440px) {
+  .card {
+    width: 350px;
+  }
+  .card .card-bg {
+    width: 350px;
+  }
+  .card .card-avatar {
+    top: 87px;
+  }
+  .card .card-personal {
+    top: 210px;
+  }
+  .card .card-bottom {
+    top: 275px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

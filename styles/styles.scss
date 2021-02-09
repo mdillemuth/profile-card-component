@@ -1,0 +1,146 @@
+// Do not edit styles.css, it is compiled from styles.scss using 'Live SASS compiler'
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// Style Guide Variables
+$dark-cyan: hsl(185, 75%, 39%);
+$dark-blue: #2e3349;
+$dark-gray-blue: #6b7082;
+$dark-gray: #979797;
+
+html {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 18px;
+}
+
+body {
+  position: relative;
+  padding: 148px 24px 0px 24px;
+  background-color: $dark-cyan;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.bg-top {
+  position: absolute;
+  top: -500px;
+  left: -300px;
+}
+.bg-bottom {
+  position: absolute;
+  bottom: -600px;
+  right: -200px;
+}
+
+.card {
+  position: relative;
+  width: 326px;
+  height: 374px;
+  margin: 0 auto;
+  border-radius: 15px;
+  background-color: #fff;
+  .card-bg {
+    border-radius: 15px 15px 0 0;
+    width: 326px;
+    position: absolute;
+    overflow: hidden;
+  }
+  .card-avatar {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+  }
+  .card-personal {
+    position: absolute;
+    top: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .name-container {
+      margin-bottom: 8px;
+    }
+
+    .name {
+      font-weight: bold;
+      margin-right: 8px;
+      color: $dark-blue;
+    }
+    .age,
+    .location {
+      color: $dark-gray-blue;
+    }
+    .location {
+      font-size: 14px;
+    }
+  }
+  .card-bottom {
+    width: 100%;
+    border-top: 1px solid $dark-gray;
+    position: absolute;
+    top: 285px;
+    height: 88px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .number {
+      color: $dark-blue;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .label {
+      font-size: 10px;
+      color: $dark-gray-blue;
+    }
+    .likes {
+      margin: 0 38px;
+    }
+  }
+}
+
+.attribution {
+  position: absolute;
+  bottom: 24px;
+  left: 0px;
+  right: 0px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.5;
+
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+// Desktop
+@media all and (min-width: 1440px) {
+  .card {
+    width: 350px;
+    .card-bg {
+      width: 350px;
+    }
+    .card-avatar {
+      top: 87px;
+    }
+    .card-personal {
+      top: 210px;
+    }
+    .card-bottom {
+      top: 275px;
+    }
+  }
+}
